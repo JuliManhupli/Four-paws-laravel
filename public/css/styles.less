@@ -1,0 +1,758 @@
+@import "mobile_version.less";
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.45vw;
+}
+
+button {
+    width: 100%;
+    height: 70px;
+    background-color: #51669B;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 40px;
+    -webkit-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:    0 9px 10px 0 rgba(0, 0, 0, 0.5);
+    box-shadow:         0 9px 10px 0 rgba(0, 0, 0, 0.5);
+
+    &:hover {
+        color: #51669B;
+        border-color: currentColor;
+        background-color: white;
+    }
+
+    &:active {
+        outline: none;
+        box-shadow: 0 0 0 3px #51669B,
+        0 0 0 1.5px #51669B;
+    }
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0;
+    padding-top: 80px;
+    text-align:center;
+}
+
+img {
+    width:auto;
+    max-width:100%;
+    height:auto;
+}
+
+a {
+    display:inline-block;
+    color: black;
+    text-decoration: none;
+}
+
+//-----Header-----
+
+//Header landing picture
+.intro {
+    background: url("../pictures/intro.png") center no-repeat;
+    background-size: cover;
+    height: 800px;
+    max-width:100%
+}
+
+//Header picture
+.intro2 {
+    background: url("../pictures/reviews/intro2.png") center no-repeat;
+    background-size: cover;
+    height: 140px;
+    max-width:100%
+}
+
+//Top Menu
+.header_inner {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    nav {
+        font-size: 14px;
+    }
+
+    a {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 20px;
+        position: relative;
+
+        &:before  {
+            content: '';
+            position: absolute;
+            left: 0; bottom: -5px;
+            width: 0;
+            height: 1.5px;
+            background-color: black;
+            transition: width 0.35s;
+        }
+
+        &:hover:before {
+            width: 100%;
+        }
+
+        &:hover {
+            font-weight: bold;
+            transition: font-weight 0.05s;
+        }
+    }
+
+    blockquote {
+        font-weight: bold;
+    }
+}
+
+//Menu mobile version
+.menu {
+    display: none;
+}
+
+//Tagline and button
+.tagline{
+
+    h1 {
+        font-size: 48px;
+        padding-top: 150px;
+        text-align: left;
+    }
+
+    h2 {
+        font-weight: normal;
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    button {
+        margin-top: 20px;
+    }
+}
+
+//-----Project-----
+
+//About project
+.project{
+    height: 500px;
+
+    blockquote {
+        border-style: dashed;
+        border-color: white;
+        border-width: 5px;
+        margin: 0;
+        padding-left: 75px;
+        padding-top: 25px;
+        padding-bottom: 55px;
+        border-radius: 50px;
+        line-height: 2;
+    }
+}
+
+//Background of block about project
+.description{
+    background: #FEDAA4;
+    margin-top: 40px;
+    margin-left: 0;
+    padding: 25px;
+    border-radius: 50px;
+    -webkit-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:    0 9px 10px 0 rgba(0, 0, 0, 0.5);
+    box-shadow:         0 9px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+//-----Choose your pet-----
+
+//Background of block about pets
+.background {
+    background: #FEDAA4;
+    background-size: cover;
+    height: 900px;
+
+}
+
+//Choose pet
+.choose_pet {
+    margin-top: 40px;
+
+    button{
+        margin-top: 30px;
+    }
+
+    a {
+
+        &:hover {
+            border-radius: 50px;
+            -webkit-box-shadow: 0 9px 20px 0 rgba(0, 0, 0, 0.5);
+            -moz-box-shadow:    0 9px 20px 0 rgba(0, 0, 0, 0.5);
+            box-shadow:         0 9px 20px 0 rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+
+//Block about pet
+.pet{
+    background: #FDB549;
+    border-radius: 50px;
+    height: 500px;
+    -webkit-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:    0 9px 10px 0 rgba(0, 0, 0, 0.5);
+    box-shadow:         0 9px 10px 0 rgba(0, 0, 0, 0.5);
+
+    h2{
+        margin: 0;
+        padding-left: 15%;
+        padding-top: 15px;
+    }
+
+    blockquote{
+        margin: 0;
+        padding-left: 15%;
+        padding-top: 5px;
+    }
+}
+
+//-----Reasons take animal from shelter-----
+
+//Block about reasons take pet
+.reasons {
+    height: 500px;
+}
+
+.reason{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background: #FEDAA4;
+    height: 100px;
+    margin-top: 40px;
+    border-radius: 50px;
+    padding-left: 10%;
+    -webkit-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:    0 9px 10px 0 rgba(0, 0, 0, 0.5);
+    box-shadow:         0 9px 10px 0 rgba(0, 0, 0, 0.5);
+
+    img {
+        position: absolute;
+    }
+
+    blockquote{
+        font-weight: bold;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
+//-----Reviews-----
+
+//Block about reviews
+.swiper{
+    height: 700px;
+}
+
+//Review text and photo
+.review_text{
+    width: 80%;
+    background: #FDB549;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    border-radius: 50px;
+    line-height: 1.5;
+    -webkit-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:    0 9px 10px 0 rgba(0, 0, 0, 0.5);
+    box-shadow:         0 9px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+//Review text
+.text{
+    padding-bottom: 5%;
+
+    h2 {
+        font-size: 24px;
+        padding-left: 10%;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+
+    blockquote{
+        text-align: justify;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin: 0;
+    }
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-prev::after {
+    display: none;
+}
+
+.swiper-button-next::after {
+    display: none;
+}
+//-----How else to help?-----
+
+//Block information with other help
+.another_help {
+    height: 650px;
+
+    button{
+        margin-top: 30px;
+    }
+}
+
+//Information about other help
+.path_help {
+    background: #FEDAA4;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 50px;
+    -webkit-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:    0 9px 10px 0 rgba(0, 0, 0, 0.5);
+    box-shadow:         0 9px 10px 0 rgba(0, 0, 0, 0.5);
+
+    blockquote {
+        font-weight: bold;
+    }
+}
+
+.another_color {
+    background: #FFCC62;
+}
+
+//-----Footer-----
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    height: 260px;
+    padding-top: 60px;
+
+    blockquote {
+        font-weight: bold;
+        margin: 0;
+        padding-bottom: 10px;
+    }
+}
+
+.social_network {
+    display: flex;
+    justify-content: space-between;
+}
+
+.facebook{
+    margin-right: 20px;
+}
+
+.background_footer {
+    background: #BF7955;
+}
+
+//-----Navigate to other pages-----
+
+.navigation {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+//-----Block with choice of parameters for search-----
+
+.menu_search {
+    margin-top: 40px;
+    margin-bottom: 60px;
+
+    h1 {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        padding-top: 0;
+    }
+}
+
+//First line
+.menu_first_line {
+    margin-bottom: 20px;
+
+    button {
+        height: 120px;
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        background: #FEDAA4;
+        border-color: #FEDAA4;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &:active {
+            outline: none;
+            box-shadow: 0 0 0 3px #FEDAA4,
+            0 0 0 1.5px #FEDAA4;
+        }
+    }
+
+    img {
+        margin-left: 70px;
+        margin-right: 100px;
+    }
+}
+
+//Second line
+.menu_second_line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    blockquote {
+        font-weight: bold;
+    }
+
+    select {
+        height: 60px;
+        font-size: 20px;
+        border-radius: 50px;
+        border-color: white;
+        -webkit-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+        -moz-box-shadow:    0 9px 10px 0 rgba(0, 0, 0, 0.5);
+        box-shadow:         0 9px 10px 0 rgba(0, 0, 0, 0.5);
+        text-align: center;
+        width: 250px;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+.menu_second_line_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+//Third line
+.menu_third_line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+    blockquote {
+        font-weight: bold;
+    }
+
+    button {
+        font-weight: normal;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        background: #FEDAA4;
+        border-color: #FEDAA4;
+        color: black;
+
+        &:active {
+            outline: none;
+            box-shadow: 0 0 0 3px #FEDAA4,
+            0 0 0 1.5px #FEDAA4;
+        }
+    }
+}
+
+.menu_third_line_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+}
+
+.first {
+    width: 230px;
+}
+
+.second {
+    width: 310px;
+}
+
+.third {
+    width: 420px;
+}
+
+//-----Block about all pets-----
+
+.pets {
+    margin-bottom: 30px;
+    a {
+        margin-bottom: 30px;
+
+        &:hover {
+            border-radius: 50px;
+            -webkit-box-shadow: 0 9px 20px 0 rgba(0, 0, 0, 0.5);
+            -moz-box-shadow:    0 9px 20px 0 rgba(0, 0, 0, 0.5);
+            box-shadow:         0 9px 20px 0 rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    button{
+        margin-top: 15px;
+        margin-bottom: 45px;
+    }
+}
+
+//-----Description of pet-----
+.all_description_pet{
+    margin-top: 30px;
+    margin-bottom: 70px;
+
+    button {
+        margin-top: 45px;
+    }
+}
+
+//Photo
+.pet_photo {
+
+    img {
+        width: 100%;
+    }
+}
+
+//Description about pet
+.description_pet {
+
+    h1 {
+        padding-top: 0;
+        text-align: left;
+    }
+}
+
+//Short description about pet
+.short_description_pet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    blockquote {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+//Text
+.description_pet_text {
+    background: #FEDAA4;
+    width: 100%;
+    padding: 25px;
+    border-radius: 50px;
+    -webkit-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:    0 9px 10px 0 rgba(0, 0, 0, 0.5);
+    box-shadow:         0 9px 10px 0 rgba(0, 0, 0, 0.5);
+
+    blockquote {
+        border-style: dashed;
+        border-color: white;
+        border-width: 5px;
+        margin: 0;
+        padding-left: 50px;
+        padding-top: 25px;
+        padding-bottom: 35px;
+        border-radius: 50px;
+        line-height: 1.5;
+    }
+}
+
+//--------Form-------
+.window {
+    width: 700px;
+    height: 475px;
+    margin: 75px auto;
+    border-radius: 50px;
+    background: white;
+    position: fixed; left: 0;right: 0;top:0;bottom: 0;
+    display: none;
+    -webkit-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:    0 9px 10px 0 rgba(0, 0, 0, 0.5);
+    box-shadow:         0 9px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.form{
+    height: 450px;
+    padding-top: 25px;
+    text-align: center;
+
+    .input{
+        border-radius: 15px;
+        width: 600px;
+        height: 30px;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.45vw;
+    }
+}
+
+.button_reg {
+    width: 600px;
+    height: 70px;
+    background-color: #51669B;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 40px;
+    margin-top: 20px;
+
+    &:hover {
+        color: #51669B;
+        border-color: currentColor;
+        background-color: white;
+    }
+
+    &:active {
+        outline: none;
+        box-shadow: 0 0 0 3px #51669B,
+        0 0 0 1.5px #51669B;
+    }
+}
+
+.gray_background {
+    display: none;
+    opacity: 0.8;
+    padding: 15px;
+    background-color: rgba(1,1,1,0.75);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    overflow: auto;
+}
+
+//------------Page about way of help---------
+.help_block {
+    height: 500px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    h1 {
+        margin-top: 25px;
+        margin-bottom: 10px;
+        padding-top: 0;
+    }
+
+    img {
+        margin-top: 50px;
+        width: 100%;
+        height: 400px;
+        object-fit:cover;
+        border-radius: 50px;
+        -webkit-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+        -moz-box-shadow:    0 9px 10px 0 rgba(0, 0, 0, 0.5);
+        box-shadow:         0 9px 10px 0 rgba(0, 0, 0, 0.5);
+    }
+}
+
+.help_text {
+    margin: 100px 50px 0;
+    height: 250px;
+    background: #FEDAA4;
+    text-align: center;
+    border-radius: 50px;
+    -webkit-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:    0 9px 10px 0 rgba(0, 0, 0, 0.5);
+    box-shadow:         0 9px 10px 0 rgba(0, 0, 0, 0.5);
+
+    h2 {
+        padding-top: 40px;
+    }
+}
+
+//Background of block about vol
+.background2 {
+    background: #FEDAA4;
+    background-size: cover;
+    height: 500px;
+}
+
+.another_color {
+    background: #FFCC62;
+}
+
+//--------------Contacts---------------
+.contacts {
+    height: 650px;
+
+    h1 {
+        margin-top: 25px;
+        margin-bottom: 10px;
+        padding-top: 0;
+    }
+}
+
+.contacts_text {
+
+    margin-top: 125px;
+    margin-left: 50px;
+}
+
+.contacts_info {
+    display: flex;
+    justify-content: left;
+    font-weight: bold;
+    align-items: center;
+    margin: 10px 0;
+    img {
+        height: 50px;
+    }
+}
+
+.map {
+
+    img {
+        margin-top: 50px;
+        width: 100%;
+        height: 500px;
+        object-fit:cover;
+        border-radius: 50px;
+        -webkit-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+        -moz-box-shadow:    0 9px 10px 0 rgba(0, 0, 0, 0.5);
+        box-shadow:         0 9px 10px 0 rgba(0, 0, 0, 0.5);
+    }
+}
+
+.feedback {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feedback_text{
+  text-align: center;
+  margin-top: 120px;
+}
+
+.feedback img{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+}
